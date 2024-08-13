@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Universal selector */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* top bar starthere */
+
+.top-bar {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242,243,190);
+}
+
+.top-bar p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* top bar end here */
+
+/* main-header start here */
+
+.main-header {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    
+}
+
+.search-box input{
+    width: 236px;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(200, 200, 200, 0.4);
+    border: 2px solid rgb(200, 200, 200, 0.4);
+}
+
+.search-icon {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+
+}
+
+.logo p {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-right: 150px;
+}
+
+.fav-icon {
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-container a:hover{
+    
+    color: rgb(235, 97, 73);
+}
+
+
+/* main-header end here */
+
+/* head banner start here  */
+.color-red {
+    color: rgb(234, 59, 97);
+
+}
+
+.header-section {
+    width: 95%;
+    height: 540px;
+    margin: 0 auto;
+    background: rgba(237, 47, 89, 0.1);
+    position: relative;
+    z-index: -5;
+    margin-bottom: 50px;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-content {
+    width: 37%;
+    margin-left: 140px;
+    margin-top: 140px;
+}
+
+.header-content h1 {
+    font-size: 3.25rem;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+
+.header-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(56, 56, 56, 0.625);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.header-content h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+ .btn-primary-1 {
+    background: rgb(229, 84, 115);
+    color: rgb(242, 237, 237);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    /* cursor: pointer; */
+ }
+
+ .btn-primary-1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+ }
+
+ .btn-primary-1 a:hover {
+    background: rgba(229, 84, 115, 0.558);
+ }
+
+
+ .font-banner-img{
+    position: absolute;
+    top: -25px;
+    right: 105px;
+ }
+
+ .bg-banner-img {
+    width: 42%;
+    position: absolute;
+    bottom: -4px;
+    right: 80px;
+    z-index: -1;
+ }
+
+
+
+
+
+/* head banner end here  */
+
+/* oil section start here */
+
+.oil-section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.oil-card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.oil-card1 {
+    width: 100%;
+    position: relative;
+}
+.oil-card1-img {
+    background-color: rgb(243, 243, 205);
+    padding:80px 45px 80px 40px;
+    width: 100%;
+}
+
+.oil-card1-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.oil-card1-content{
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    font-style: italic;
+}
+
+.oil-card1-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.oil-card1-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+}
+
+.tk {
+    color: rgba(0, 0, 0, 0.545);
+    font-weight: 500;
+}
+
+.dis-tk {
+    color: rgb(255, 2, 2);
+    font-weight: 500;
+}
+
+.oil-card1-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.oil-card1-btn {
+    color: rgba(0, 0, 0, 0.706);
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+}
+
+.oil-card2-img {
+    background-color: rgb(199, 237, 240);
+    padding:80px 45px 80px 40px;
+    width: 100%;
+    height: 100%;
+}
+.oil-card2-img img{
+    width: 96%;
+    transform: scale(1.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oil-card3-img {
+    background-color: rgb(235,224,199);
+    padding:80px 45px 80px 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oil-card3-img img {
+    width: 100%;
+    transform: scale(1.25);
+}
+
+/* serum-section start here */
+
+.serum-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.serum-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.serum-title h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+.serum-title p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+}
+
+.shop-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.shop-arow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.serum-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.serum-container img{
+    background-color: rgb(248,248,248);
+    padding:15px 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 5px 0 rgba(10, 10, 10, 0.122);
+
+}
+
+.serum-container h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 8px;
+}
+
+.serum-container p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    color: rgba(56, 56, 56, 0.882);
+    margin-bottom: 8px;
+}
+
+.serum-container .serum-ratings {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    color: rgba(56, 56, 56, 0.882);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.ratings {
+    color: rgb(248, 112, 53);
+}
