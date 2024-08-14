@@ -183,7 +183,7 @@ body {
     margin-bottom: 30px;
 }
 
- .btn-primary-2 {
+ .btn-primary-2 ,.btn-primary-3{
     background: rgb(229, 84, 115);
     color: rgb(242, 237, 237);
     font-size: 0.8rem;
@@ -195,15 +195,10 @@ body {
     transition: all .6s ease;
  }
 
- .btn-primary-2:hover {
+ .btn-primary-2:hover, .btn-primary-3:hover {
     transform: scale(1.1);
  }
  
-
-
- .btn-primary-1 :hover {
-    background: rgba(229, 84, 115, 0.558);
- }
 
  .header-banner-img{
     width: 60%;
@@ -350,22 +345,22 @@ body {
     transition: all 0.5s;
 }
 
-/* serum-section start here */
+/* serum and shampoo section start here */
 
-.serum-section {
+.serum-section, .shampoo-section {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
-.serum-title {
+.serum-title , .shampoo-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
 
-.serum-title h3 {
+.serum-title h3, .shampoo-title h3 {
     font-size: 1.5rem;
     font-weight: 500;
     font-family: "poppins", sans-serif;
@@ -373,7 +368,7 @@ body {
 }
 
 
-.serum-title p{
+.serum-title p, .shampoo-title p{
     font-size: 1rem;
     font-weight: 400;
     font-family: "poppins", sans-serif;
@@ -408,8 +403,9 @@ body {
 }
 
 
-.serum-container {
+.serum-container, .shampoo-container {
     width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -419,7 +415,8 @@ body {
 }
 
 
-.serum-container img{
+.serum-container img, .shampoo-container img{
+    width: 100%;
     background-color: rgb(248,248,248);
     padding:15px 10px;
     margin-bottom: -35px;
@@ -437,14 +434,14 @@ body {
     left: -20px;
 }
 
-.serum-card1 {
+.serum-card1, .shampoo-card1 {
     width: 100%;
 }
 
 
 /*  */
 
- .serum-card1  .hover-icon {
+ .serum-card1  .hover-icon, .shampoo-card1 .hover-icon {
     position: relative;
     z-index: 50;
     opacity: 0;
@@ -452,14 +449,14 @@ body {
     transition: all .6s;
 }
 
-.serum-card1:hover .hover-icon {
+.serum-card1:hover .hover-icon, .shampoo-card1:hover .hover-icon {
     opacity: 1;
     transform: translateY(0px);
     cursor: pointer;
 }
 
 
-.serum-container h5 {
+.serum-container h5, .shampoo-container h5 {
     font-size: 1rem;
     font-weight: 500;
     font-family: "poppins", sans-serif;
@@ -467,7 +464,7 @@ body {
     margin-bottom: 8px;
 }
 
-.serum-container p {
+.serum-container p, .shampoo-container p {
     font-size: 0.85rem;
     font-weight: 400;
     font-family: "poppins", sans-serif;
@@ -475,7 +472,7 @@ body {
     margin-bottom: 8px;
 }
 
-.serum-container .serum-ratings {
+.serum-container .serum-ratings, .shampoo-container .serum-ratings {
     font-size: 0.8rem;
     font-weight: 400;
     font-family: "poppins", sans-serif;
@@ -492,6 +489,149 @@ body {
 }
 
 
-/* serum container ends here */
+/* serum and shampoo container ends here */
 
-/* shampoo container start here  */
+.shower-gel-main-container{
+    width: 90% ;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.girl5-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    background-color:rgb(151, 215, 247, 0.8);
+    overflow: hidden;
+}
+
+
+.girl5-content {
+    width: 52%;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.girl5-content h3 {
+    width: 135%;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+    margin-bottom: 24px;
+    line-height: 44px;
+}
+
+.girl5-content p {
+    width: 100%;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+    margin-bottom: 16px;
+}
+
+
+.btn-primary-3 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 245, 245);
+    border-radius: 0px;
+    padding: 7px 20px;
+}
+
+.btn-primary-3:hover {
+    background-color: rgb(229,84,115);
+    color: rgb(255, 255, 255);
+    transform: scale(1.04);
+}
+
+
+.girl5-img img{
+    width: 70%;
+    height: 100%;
+    transform: scale(1.15);
+    margin-left: 115px;
+}
+
+
+.girl5-container:hover .girl5-img{
+    transition: all .5s  ;
+    transform: scale(1.14) translateX(-30px);
+}
+
+.girl5-container:hover .girl5-content h3 {
+    transition: all .8s;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.girl5-container:hover .girl5-content p {
+    transition: all .8s;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+.big2-container {
+    width: 30%;
+    height: 333px;
+    background-color: rgb(248, 215, 249);
+    overflow: hidden;
+    /* position: relative;
+    z-index: 1; */
+}
+
+.big2-content {
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.big2-content h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(19, 19, 19);
+    margin-bottom: 16px;
+    line-height: 28px;
+}
+
+
+.big2-content p {
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(19, 19, 19);
+    margin-bottom: 6px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.big2-content .btn-primary-3 {
+    z-index: 50;
+}
+
+.big2-container img {
+    width: 50%;
+    margin-top: -68px;
+    margin-left: 144px;
+}
+
+
+.big2-container:hover .big2-image img {
+    transition: all .8s;
+    transform:scale(1.1) translatex(-50px) translateY(20px); 
+}
+
+.big2-container:hover .big2-content h4 {
+    transition: all .8s;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+.big2-container:hover .big2-content p {
+    transition: all .8s;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
