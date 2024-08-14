@@ -70,13 +70,13 @@ body {
     font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
     cursor: pointer;
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 .fav-icon {
     display: flex;
     gap: 40px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -84,7 +84,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     margin-bottom: 30px;
 }
 
@@ -92,19 +91,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
 }
 
 .nav-container a {
     text-decoration: none;
-    color: rgb(56, 56, 56);
+    color: rgba(56, 56, 56, 0.804);
     font-size: 1rem;
     font-weight: 500;
+    padding: 5px 15px;
+    position: relative;
 }
 
 .nav-container a:hover{
     
-    color: rgb(235, 97, 73);
+    color: rgb(56, 56, 56);
+}
+
+.nav-container a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(248, 112, 53);
+    transition: all 1s;
+}
+
+.nav-container a:hover::before {
+    width: 100%;
 }
 
 
@@ -122,7 +138,7 @@ body {
     margin: 0 auto;
     background: rgba(237, 47, 89, 0.1);
     position: relative;
-    z-index: -5;
+    z-index: 5;
     margin-bottom: 50px;
 }
 
@@ -164,42 +180,57 @@ body {
     color: rgb(19, 19, 19);
     line-height: 24px;
     letter-spacing: 0.5px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
- .btn-primary-1 {
+ .btn-primary-2 {
     background: rgb(229, 84, 115);
     color: rgb(242, 237, 237);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    padding: 15px 30px;
-    border: none;
-    /* cursor: pointer; */
- }
-
- .btn-primary-1 a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    padding: 13px 25px;
+    border: 2px solid transparent;
+    border-radius: 7px;
     cursor: pointer;
+    transition: all .6s ease;
  }
 
- .btn-primary-1 a:hover {
+ .btn-primary-2:hover {
+    transform: scale(1.1);
+ }
+ 
+
+
+ .btn-primary-1 :hover {
     background: rgba(229, 84, 115, 0.558);
  }
+
+ .header-banner-img{
+    width: 60%;
+ }
+
+
 
 
  .font-banner-img{
     position: absolute;
     top: -25px;
-    right: 105px;
+    right: 100px;
+    transition: all .6s ease;
+
  }
+
+ .font-banner-img:hover {
+    transform: translateY(-5px);
+
+}
 
  .bg-banner-img {
     width: 42%;
     position: absolute;
-    bottom: -4px;
-    right: 80px;
-    z-index: -1;
+    bottom: 4px;
+    right: 100px;
+    z-index: -15;
  }
 
 
@@ -231,6 +262,12 @@ body {
     background-color: rgb(243, 243, 205);
     padding:80px 45px 80px 40px;
     width: 100%;
+}
+
+
+.oil-card1:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
 }
 
 .oil-card1-img img {
@@ -310,6 +347,7 @@ body {
 .oil-card3-img img {
     width: 100%;
     transform: scale(1.25);
+    transition: all 0.5s;
 }
 
 /* serum-section start here */
@@ -317,6 +355,7 @@ body {
 .serum-section {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .serum-title {
@@ -340,6 +379,19 @@ body {
     font-family: "poppins", sans-serif;
 }
 
+
+
+.shop-arrow-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.shop-arrow-product:hover {
+    color: rgba(29, 29, 29, 0.673);
+}
 .shop-arrow {
     display: flex;
     justify-content: center;
@@ -357,22 +409,55 @@ body {
 
 
 .serum-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-content: center;
     text-align: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 
 .serum-container img{
     background-color: rgb(248,248,248);
     padding:15px 10px;
-    margin-bottom: 16px;
+    margin-bottom: -35px;
     box-shadow: 0 0 5px 0 rgba(10, 10, 10, 0.122);
-
+    position: relative;
 }
+
+.hover-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    top: -150px;
+    left: -20px;
+}
+
+.serum-card1 {
+    width: 100%;
+}
+
+
+/*  */
+
+ .serum-card1  .hover-icon {
+    position: relative;
+    z-index: 50;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .6s;
+}
+
+.serum-card1:hover .hover-icon {
+    opacity: 1;
+    transform: translateY(0px);
+    cursor: pointer;
+}
+
 
 .serum-container h5 {
     font-size: 1rem;
@@ -405,3 +490,8 @@ body {
 .ratings {
     color: rgb(248, 112, 53);
 }
+
+
+/* serum container ends here */
+
+/* shampoo container start here  */
